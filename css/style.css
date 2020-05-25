@@ -30,8 +30,14 @@ table th {
   padding: 8px;
 }
 
+button:hover,
 .table__header .table__cell:hover {
   background-color: #a2cafd;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #e7eff8;
 }
 
 input {
@@ -58,10 +64,15 @@ button {
   font-size: 20px;
 }
 
+
+.pagination {
+  margin-bottom: 30px;
+}
+
 /* Pagination links */
 .pagination a {
+  display: inline-block;
   color: black;
-  float: left;
   padding: 8px 16px;
   text-decoration: none;
   transition: background-color .3s;

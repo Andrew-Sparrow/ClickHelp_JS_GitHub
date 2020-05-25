@@ -5,12 +5,17 @@
   const MAX_TABLE_ROWS = 5;
 
   let mockData = [
-    {id: 1, name: "Alice", value: 1000},
     {id: 2, name: "John", value: 570},
+    {id: 1, name: "Alice", value: 1000},
     {id: 3, name: "Victoria", value: 760},
     {id: 4, name: "Eva", value: 930},
     {id: 5, name: "James", value: 15}
   ];
+
+  window.data = {
+    mockData: mockData,
+    fillTableByData: fillTableByData,
+  };
 
   let input = document.querySelector("#input");
   let table = document.querySelector("#table");
