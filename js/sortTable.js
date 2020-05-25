@@ -61,4 +61,6 @@
   nameHeader.addEventListener('click', sortByName);
   valueHeader.addEventListener('click', sortByValue);
 
+  // по моему это красивый код )
+
 })();
