@@ -23,11 +23,25 @@ table th {
   border-style: solid;
   border-color: #000000;
   background-color: #c6d9f1;
+  overflow: auto;
+  resize: horizontal;
+}
+
+table th:last-child {
+  resize: none;
 }
 
 .table__cell {
   font-size: 20px;
   padding: 8px;
+}
+
+.table__header .table__cell {
+  border-right: 3px solid #000000;
+}
+
+.table__header .table__cell:last-child {
+  border-right: 1px solid #000000;
 }
 
 button:hover,

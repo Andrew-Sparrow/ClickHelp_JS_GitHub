@@ -5,8 +5,6 @@
   let nameHeader = document.querySelector("#name");
   let valueHeader = document.querySelector("#value");
 
-  let mockData = window.data.mockData;
-
   let check = {
     isClickedByID: false,
     isClickedByName: false,
@@ -15,12 +13,12 @@
 
   function sortBy(isClickedBy, compare) {
     if(check[isClickedBy]) {
-      mockData.reverse();
-      window.data.fillTableByData(mockData);
+      window.data.mockData.reverse();
+      window.data.fillTableByData(window.data.mockData);
       return;
     }
-    mockData.sort(compare);
-    window.data.fillTableByData(mockData);
+    window.data.mockData.sort(compare);
+    window.data.fillTableByData(window.data.mockData);
 
     if(isClickedBy === 'isClickedByID') {
       check.isClickedByID = true;
@@ -60,7 +58,5 @@
   idHeader.addEventListener('click', sortByID);
   nameHeader.addEventListener('click', sortByName);
   valueHeader.addEventListener('click', sortByValue);
-
-  // по моему это красивый код )
 
 })();
