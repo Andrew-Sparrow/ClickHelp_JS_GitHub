@@ -44,6 +44,10 @@ table th:last-child {
   border-right: 1px solid #000000;
 }
 
+.table__row:hover {
+  background-color: #f5f5dc;
+}
+
 button:hover,
 .table__header .table__cell:hover {
   background-color: #a2cafd;
