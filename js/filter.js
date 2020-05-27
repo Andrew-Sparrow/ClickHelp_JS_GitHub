@@ -24,7 +24,10 @@
 function compareForFilter(item) {
   let dataFromInput = input.value.toLowerCase();
 
-  return item.name.toLowerCase().includes(dataFromInput);
+  let isInRow = item.name.toLowerCase().includes(dataFromInput) || item.id === parseInt(dataFromInput) || item.value === parseInt(dataFromInput);
+  console.log(typeof dataFromInput);
+
+  return isInRow;
 }
 
   function filterData() {
