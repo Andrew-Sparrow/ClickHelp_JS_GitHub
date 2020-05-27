@@ -1,14 +1,14 @@
 'use strict';
 (function () {
 
-  const MAX_TABLE_ROWS = 5;
-
   let mockData = [
     {id: 2, name: "John", value: 570},
     {id: 1, name: "Alice", value: 1000},
     {id: 3, name: "Victoria", value: 760},
     {id: 4, name: "Eva", value: 930},
-    {id: 5, name: "James", value: 15}
+    {id: 6, name: "Stanley", value: 15},
+    {id: 5, name: "Viola", value: 105},
+    {id: 7, name: "James", value: 345},
   ];
 
   window.data = {
@@ -24,8 +24,9 @@
 function compareForFilter(item) {
   let dataFromInput = input.value.toLowerCase();
 
-  let isInRow = item.name.toLowerCase().includes(dataFromInput) || item.id === parseInt(dataFromInput) || item.value === parseInt(dataFromInput);
-  console.log(typeof dataFromInput);
+  let isInRow = item.name.toLowerCase().includes(dataFromInput)
+   || item.id === parseInt(dataFromInput)
+   || item.value === parseInt(dataFromInput);
 
   return isInRow;
 }
